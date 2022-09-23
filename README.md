@@ -1,4 +1,5 @@
 # Application-for-hidden-devs
+```lua
 local ui = script.Parent
 
 local RS = game:GetService("RunService")
@@ -43,3 +44,4 @@ ui.MouseButton1Click:Connect(function()
 		end)	
 	end
 end)
+```
