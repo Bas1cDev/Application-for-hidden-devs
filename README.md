@@ -17,6 +17,8 @@ local cam = workspace.CurrentCamera
 ui.MouseButton1Click:Connect(function()
 	if clicked == false then
 		clicked = true
+		player.Character:FindFirstChild("Humanoid").WalkSpeed = 0
+		player.Character:FindFirstChild("Humanoid").JumpHeight = 0
 		local clone = game.ReplicatedStorage.Wall:Clone()
 		clone.Parent = workspace
 		clone.Transparency = .3
